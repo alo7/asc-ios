@@ -1,0 +1,18 @@
+//
+//  ASCError.h
+//  ASC_EXT
+//
+//  Created by Joseph Lee on 2020/7/13.
+//  Copyright © 2020 Alo7. All rights reserved.
+//
+
+typedef enum : NSUInteger {
+    SDK_NOT_INITIALIZED = 10000,
+    INVALID_INIT_PARAMETER = 10001,
+    INVALID_SESSION_PARAMETER = 10002,
+    PERMISSION_DENIED = 10003,
+    LOADING_MEDIA_ERROR = 10004,
+    LOADING_WEBVIEW_TIMEOUT = 10005,
+    LOADING_LESSON_INFO_FAILED = 10006,
+    LOADING_SEEK_INFO_FAILED = 10007,
+} ASCErrorCode;
