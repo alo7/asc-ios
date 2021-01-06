@@ -9,7 +9,9 @@
    2. 准备 Podfile
    ```ruby
    # CocoaPods master repo，如果使用其他的镜像源，此行可修改
-   source 'https://github.com/CocoaPods/Specs.git' 
+   # source 'https://github.com/CocoaPods/Specs.git' 
+   # 若CocoaPods 版本高于 1.7.2，建议使用 CDN 地址。
+   source 'https://cdn.cocoapods.org/'
    
    # ASC 依赖 CocoaPods Repo，必填
    source 'https://pt.singsound.com:10081/singsound-public/SingSoundSDKCocoaPodRepo.git'

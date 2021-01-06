@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'ASC_EXT'
-    s.version          = '0.1.0'
+    s.version          = '0.2.0'
     s.summary          = 'Alo7 Streaming Class External SDK'
     s.homepage         = 'https://github.com/alo7/asc-ios'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
