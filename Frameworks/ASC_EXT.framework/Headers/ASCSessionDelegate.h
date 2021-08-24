@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ASCError.h"
-
+#import "ASCDef.h"
 @class ASCSession;
 
 /// ASC 会话协议
@@ -19,5 +19,13 @@
 -(void)ascSessionDidStart:(ASCSession *)session;
 -(void)ascSession:(ASCSession *)session didOccurError:(ASCErrorCode)errorCode;
 -(void)ascSessionDidExit:(ASCSession *)session;
-
 @end
+
+@protocol ASCSessionPlayerDelegate <NSObject>
+
+@optional
+-(void)ascSession:(ASCSession *)session playEvent:(ASCEventType)event;
+-(void)onCurrentPositionUpdate:(ASCSession *)session position:(int64_t)position;
+-(void)onBufferedPositionUpdate:(ASCSession *)session position:(int64_t)position;
+@end
+

@@ -64,6 +64,9 @@
     // 设置代理 (可选)
     self.session.delegate = self;
 
+    // 设置Player代理 (可选)
+    self.session.playerDelegate = self;
+
     // 开始上课
     [ASCSDK startBySession:self.session fromViewController:self];
    ```
@@ -83,4 +86,18 @@
       - (void)ascSession:(ASCSession *)session didOccurError:(NSError *)error {
           // 错误处理
       }
+
+        // ASC Session playerDelegate 相关回调方法
+      - (void)ascSession:(ASCSession *)session playEvent:(ASCEventType)event{
+          // 播发事件
+      }
+
+      - (void)onBufferedPositionUpdate:(ASCSession *)session position:(int64_t)position {
+        // 缓存位置
+      }
+
+      - (void)onCurrentPositionUpdate:(ASCSession *)session position:(int64_t)position {
+        //当前位置
+     }
+
    ```

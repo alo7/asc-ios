@@ -17,6 +17,9 @@ __attribute__((objc_subclassing_restricted))
 /// ASC Session Delegate
 @property(weak, nonatomic, nullable) id <ASCSessionDelegate> delegate;
 
+/// ASC Session Player Delegate
+@property(weak, nonatomic, nullable) id <ASCSessionPlayerDelegate> playerDelegate;
+
 /// 一次会话的唯一标识
 @property(copy, readonly, nonatomic, nonnull) NSString *identifier;
 
