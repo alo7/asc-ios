@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'https://cdn.cocoapods.org/'
+source 'https://pt.singsound.com:10081/singsound-public/SingSoundSDKCocoaPodRepo.git'
+source 'https://github.com/alo7/ios-repo.git'
+inhibit_all_warnings!
+
+target 'ASCDemo_HLB' do
+  pod 'AFNetworking'
+  pod 'ASC_EXT_HLB'
+end
+
+target 'ASCDemo_EXT' do
+  pod 'AFNetworking'
+  pod 'ASC_EXT'
+end

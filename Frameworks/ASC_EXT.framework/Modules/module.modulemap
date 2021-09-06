@@ -1,6 +1,0 @@
-framework module ASC_EXT {
-  umbrella header "ASC_EXT.h"
-
-  export *
-  module * { export * }
-}
